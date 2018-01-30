@@ -1,0 +1,21 @@
+#main-header {
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+  #main-header img {
+    width: 100%;
+    height: 100%; }
+  #main-header .fa {
+    font-size: 1.5em; }
+  #main-header .fa:hover {
+    opacity: 0.8;
+    cursor: pointer; }
+  #main-header .item {
+    width: 25%; }
+  #main-header .item:hover {
+    opacity: 0.8;
+    cursor: pointer; }
+
+@media (min-width: 1199px) {
+  .item {
+    padding: 2.5em !important; }
+  .fa {
+    font-size: 2.5em !important; } }

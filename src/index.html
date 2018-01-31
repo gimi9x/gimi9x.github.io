@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,55 +13,226 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container pt-5">
+        <!--HEADER -->
         <header id="main-header">
             <div class="row no-gutters">
-                <div class="col-lg-3 col-md-4 col-sm-12">
-                    <img src="http://via.placeholder.com/200x200">
+                <div id="avatar" class="col-lg-3 col-md-4 col-sm-12">
+                    <img src="img/profile1.png">
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-12">
-                    <div class="d-flex flex-column text-white bg-dark">
-                        <div class="d-flex flex-row justify-content-between flex-wrap align-items-center p-3">
-                            <h1 class="display-5 ">Nguyễn Ngọc Huy</h1>
-                            <div>
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <div>
-                                <i class="fa fa-envelope"></i>
-                            </div>
-                            <div>
-                                <i class="fa fa-facebook-square "></i>
-                            </div>
-                            <div>
-                                <i class="fa fa-github"></i>
+                    <div class="d-flex flex-column text-white">
+                        <div id="line1" class="d-flex flex-row justify-content-between flex-wrap align-items-center p-3" style="background-color:darkslategrey">
+                            <h1 class="display-5">Nguyen Ngoc Huy</h1>
+                            <div id="iconblink" class="pr-5">
+                                <a class="text-success" href="mailto:ngochuyoff1305@gmail.com?Subject=Let's work together! 💪">Offer Me Now
+                                    <i class="fa fa-check-circle text-success"></i>
+                                </a>
                             </div>
                         </div>
-                        <div class="text-dark p-3" style="background-color:whitesmoke; font-size:1.5em;">
-                            Front-End Developer 
+                        <div id="line2" class="text-dark p-3" style="background-color:whitesmoke; font-size:1.5em;">
+                            Front-End Developer
                         </div>
                         <div class="d-flex flex-row align-content-stretch text-center">
-                            <div class="item p-3 bg-primary">
-                                <i class="d-block fa fa-home"></i>Home
-                            </div>
-                            <div class="item p-3 bg-danger">
+                            <div class="item p-4 bg-primary" data-toggle="collapse" data-target="#about">
                                 <i class="d-block fa fa-user"></i>About Me
                             </div>
-                            <div class="item p-3 bg-warning">
-                                <i class="d-block fa fa-folder-open"></i>Projects
+                            <div class="item p-4 bg-danger" data-toggle="collapse" data-target="#skill">
+                                <i class="d-block fa fa-line-chart"></i>Skills
                             </div>
-                            <div class="item p-3 bg-success">
-                                <i class="d-block fa fa-pencil"></i>Contract
+                            <div class="item p-4 bg-warning" data-toggle="collapse" data-target="#project">
+                                <i class="d-block fa fa-globe"></i>Project
+                            </div>
+                            <div class="item p-4 bg-success" data-toggle="collapse" data-target="#contact">
+                                <i class="d-block fa fa-pencil"></i>Contact
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-    </div>
 
+        <!--ABOUT -->
+        <div id="about" class="collapse ">
+            <div class="card card-block bg-primary text-white pl-3 pt-3">
+                <h3>Hello, My name is Huy!</h3>
+                <p class="lead">I'm 23 years-old and I'm a Front-End Developer @HCMC, Vietnam.</p>
+            </div>
+            <div class="card card-block p-2">
+                <p class="lead font-weight-normal p-2" style="border-left:gray solid"> I have a passion of learning and developing myself like improve the hands-on experience in real projects,
+                    Learn how to work in group and professional environment. Take advantage of Front-End skills and insights
+                    to engage in building and developing Web-applications.</p>
+            </div>
+        </div>
+
+        <!--SKILL -->
+        <div id="skill" class="collapse ">
+            <div class="card card-block bg-danger text-white p-3">
+                <h3>My Skills</h3>
+            </div>
+            <div class="card card-block p-3">
+                <h4>HTML</h4>
+                <div class="progress">
+                    <div class="progress-bar" style="width:90%"></div>
+                </div>
+                <hr></hr>
+                <h4>CSS</h4>
+                <div class="progress">
+                    <div class="progress-bar" style="width:85%"></div>
+                </div>
+                <hr></hr>
+                <h4>Jquery</h4>
+                <div class="progress">
+                    <div class="progress-bar" style="width:50%"></div>
+                </div>
+                <hr></hr>
+                <h4>Bootstrap</h4>
+                <div class="progress">
+                    <div class="progress-bar" style="width:55%"></div>
+                </div>
+                <hr></hr>
+            </div>
+        </div>
+        <!--PROJECTS -->
+        <div id="project" class="collapse ">
+            <div class="card card-block bg-warning text-white pl-3 pt-3">
+                <h2>My Projects</h2>
+                <p class="lead">I'm trying to developing 2 of my website
+                </p>
+            </div>
+            <div class="card card-block p-3">
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="http://via.placeholder.com/1920x1080">
+                        <div class="card-body">
+                            <a target="_blank" href="https://www.facebook.com/">
+                                <h5 class="card-title">Gimi English</h5>
+                            </a>
+                            <p class="card-text">A website for study English</p>
+                            <a target="_blank" href="https://www.google.com.vn">
+                                <button type="button" class="btn btn-primary float-right">Source code</button>
+                            </a>
+                            <a target="_blank" href="https://www.google.com.vn">
+                                <button type="button" class="btn btn-danger float-right">Visit</button>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img class="card-img-top" src="http://via.placeholder.com/1920x1080">
+                        <div class="card-body">
+                            <a target="_blank" href="https://www.facebook.com/">
+                                <h5 class="card-title">Gimi Dictionary</h5>
+                            </a>
+                            <p class="card-text">A website for Translate English</p>
+                            <a target="_blank" href="https://www.google.com.vn">
+                                <button type="button" class="btn btn-primary float-right">Source code</button>
+                            </a>
+                            <a target="_blank" href="https://www.google.com.vn">
+                                <button type="button" class="btn btn-danger float-right">Visit</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--CONTACT -->
+        <div id="contact" class="collapse ">
+            <div class="card card-block bg-success text-white p-3">
+                <h2>Get In Touch </h2>
+            </div>
+            <div class="card card-block p-3">
+                <div class="link-group">
+                    <div>
+                        <i class="fa fa-phone"></i> (+84) 947 20 66 88
+                    </div>
+                    <div>
+                        <a target="_blank" href="mailto:ngochuyoff1305@gmail.com?Subject=Let's work together! 💪">
+                            <i class="fa fa-envelope"></i> ngochuyoff1305@gmail.com</a>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://github.com/gimi9x/">
+                            <i class="fa fa-github"></i> /gimi9x</a>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.facebook.com/hyu.ji.2014">
+                            <i class="fa fa-facebook"></i>/hyu.ji.2014</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="main-footer" class="p-3 bg-dark text-white">
+            <div class="col text-center">
+                <div>
+                    <i id="iconblink" class="fa fa-heart text-danger"></i> By Gimi - 2018
+                </div>
+                <button type="button" class="btn btn-outline-secondary">
+                    <i class="fa fa-cloud-download"></i> Download My CV</button>
+            </div>
+        </footer>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        $('.item').click(function () {
+            $('.collapse').collapse('hide');
+        })
+    </script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('#avatar', {
+            duration: 1000,
+            origin: 'left',
+            distance: '300px',
+            rotate: {
+                x: 50,
+                y: 0,
+                z: 40
+            }
+        });
+        sr.reveal('#line1', {
+            duration: 1500,
+            origin: 'right',
+            distance: '300px',
+            rotate: {
+                x: 0,
+                y: 40,
+                z: 40
+            }
+        });
+        sr.reveal('#line2', {
+            duration: 2000,
+            origin: 'right',
+            distance: '450px',
+            rotate: {
+                x: 0,
+                y: 20,
+                z: 40
+            }
+        });
+        sr.reveal('.item', {
+            duration: 2500,
+            origin: 'right',
+            distance: '500px',
+            rotate: {
+                x: 0,
+                y: 180,
+                z: 0
+            }
+        });
+        sr.reveal('#main-footer', {
+            duration: 2500,
+            origin: 'bottom',
+            distance: '600px',
+            rotate: {
+                x: 360,
+                y: 0,
+                z: 0
+            }
+        });
+    </script>
 </body>
 
 </html>

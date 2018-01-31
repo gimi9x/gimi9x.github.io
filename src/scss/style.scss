@@ -1,3 +1,7 @@
+a,h1,h2,h3,h4 {
+    font-family: 'Merriweather',
+    serif;
+}
 #main-header {
     img {
         width: 100%;
@@ -17,9 +21,9 @@
     }
 }
 .link-group{
-    font-size: 30px;
+    font-size: 20px;
     .fa{
-        font-size: 1.5em
+        font-size: 2em
     };
     a{
         text-decoration: none;
@@ -33,7 +37,7 @@
         padding: 3em !important;
     }
     .item .fa {
-        font-size: 2em !important;
+        font-size: 3em !important;
     }
 }
 @media(max-width:766px) {
